@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h1>Welcome to the Home Page template!</h1>
+{% endblock %}
+
+{% block list %}
+<p>{{title}}</p>
+<ul>
+    {% for item in list %}
+    <li>{{ item }}. <a href="{%url 'about' index=item name='ziyu' %}">点击查看详情</a> </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+

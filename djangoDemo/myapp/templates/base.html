@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <img src="{% static 'image/js.png' %}" />
+    {% block title %}
+    {% endblock %}
+    <hr />
+    {% block list %}
+    {% endblock %}
+    <p>footer text </p>
+</body>
+</html>
